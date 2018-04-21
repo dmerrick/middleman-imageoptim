@@ -10,7 +10,7 @@ module Middleman
       end
 
       def path
-        File.join(build_dir, '..', MANIFEST_FILENAME)
+        Dir.glob(File.join(build_dir, '..', MANIFEST_FILENAME))
       end
 
       def build_dir
